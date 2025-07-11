@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.game-container {
+    position: relative; /* Necessário para a tela de game over */
+}
+
+h1 {
+    color: #4d94ff;
+    text-shadow: 2px 2px 4px #000;
+}
+
+canvas {
+    background-color: #000;
+    border: 3px solid #4d94ff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(77, 148, 255, 0.5);
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Tela de Fim de Jogo */
+#gameOverScreen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 40px;
+    border-radius: 10px;
+    border: 2px solid #ff4d4d;
+    box-shadow: 0 0 15px #ff4d4d;
+}
+
+#gameOverScreen h2 {
+    color: #ff4d4d;
+    margin-top: 0;
+}
+
+#restartButton {
+    background-color: #4d94ff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#restartButton:hover {
+    background-color: #367fde;
+}
+
+.hidden {
+    display: none;
+}

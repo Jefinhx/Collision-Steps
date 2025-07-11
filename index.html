@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degrees of Collision</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Coletor de Bolinhas</h1>
+        <canvas id="gameCanvas" width="600" height="600"></canvas>
+        <div class="info">
+            <p>Pontos: <span id="score">0</span></p>
+            <p>Velocidade: <span id="speed">1.0</span>x</p>
+        </div>
+        <div id="gameOverScreen" class="hidden">
+            <h2>Fim de Jogo!</h2>
+            <p>Sua pontuação final foi: <span id="finalScore">0</span></p>
+            <button id="restartButton">Jogar Novamente</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
